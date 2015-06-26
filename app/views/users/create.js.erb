@@ -1,0 +1,8 @@
+
+<% if @response.code == 201 %>
+  $("#super-wicked-modal").modal("hide");
+  
+  //  partial with the links to sign in
+<% else %>
+  $("#super-wicked-modal .modal-body").html("<%= j render partial: 'signupform'%> ");
+<% end %>

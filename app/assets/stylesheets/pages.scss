@@ -1,0 +1,15 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.jumbotron {
+  padding-left: 5rem;
+  background-color: #F47983;
+  color: white;
+  .btn{
+    background-color: #FFB3A7;
+    color: white;
+  }
+  .btn:hover {
+    background-color: #89C4F4;
+  }
+  }
