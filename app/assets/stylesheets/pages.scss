@@ -2,9 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .jumbotron {
-  padding-left: 5rem;
-  background-color: #F47983;
-  color: white;
+    padding-left: 5rem;
+    background-color: #C5EFF7;
+    color: #6C7A89;
+  h1{
+    font-size: 6em;
+  }
   .btn{
     background-color: #FFB3A7;
     color: white;
@@ -12,4 +15,10 @@
   .btn:hover {
     background-color: #89C4F4;
   }
-  }
+}
+
+#indiv-secret{
+  width: 30%;
+  border: 1px solid #C5EFF7;
+  margin: 0.5em;
+}

@@ -1,8 +1,7 @@
 <div class="jumbotron">
   <h1> Secrets </h1>
     <p> Shhhh.... We promise not to tell.  </p>
-    <br>
-    <p> Log in to see all of the secrets. </p>
+    <p > Log in to discover and share your secrets. </p>
 
 
       <% if @name.nil? %>
@@ -20,25 +19,23 @@
 
 <!--will need to take the links away and render the _links  -->
 </div>
- Welcome <%= @name %>
 
-
- <div class="row">
-   <div class="thumbnail">
-    <% if !@name.nil? %>
-    <div class="col-sm-6 col-md-4">
-    <% @secrets.each do |secret| %>
-    <div class="col-md-4">
-        <h3><%= secret["title"] %></h3>
-        <p><%= secret["comment"] %></p>
+<div class="container">
+  <% if !@name.nil? %>
+  <h2> Welcome <%= @name %> </h2>
+    <% @secrets.in_groups_of(3, false) do |secrets| %>
+      <div class="row">
+      <% secrets.each do |secret| %>
+        <div class="col-md-4" id="indiv-secret">
+          <h3><%= secret["title"] %></h3>
+          <p><%= secret["comment"] %></p>
+          <p> Posted: <%= distance_of_time_in_words_to_now secret["created_at"] %> </p>
+        </div>
+        <%end%>
       </div>
     <%end%>
+  <%end%>
 </div>
-    <%end%>
-  </div>
-  </div>
-
-
 
 
 
