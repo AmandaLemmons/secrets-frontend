@@ -19,6 +19,12 @@
 
 #indiv-secret{
   width: 30%;
-  border: 1px solid #C5EFF7;
+  height: 25em;
+  border: 1px solid darken(#C5EFF7, 50%);
   margin: 0.5em;
+}
+body{
+  background: #ECF0F1;
+  color: #6C7A89;
+
 }

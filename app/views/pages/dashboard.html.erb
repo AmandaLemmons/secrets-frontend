@@ -11,31 +11,16 @@
         <button class="btn btn-primary btn-lg"> <%= link_to "Log out", logout_path, method: :delete %> </button>
         <button class="btn btn-primary btn-lg"> <%= link_to "Add a Secret", secrets_path, remote: true %> </button>
       <%end%>
+</div>
 
-
-
+<div class="show_secret">
+  <%= render partial: 'secrets/secrets' %>
+</div>
 
 
 
 <!--will need to take the links away and render the _links  -->
-</div>
 
-<div class="container">
-  <% if !@name.nil? %>
-  <h2> Welcome <%= @name %> </h2>
-    <% @secrets.in_groups_of(3, false) do |secrets| %>
-      <div class="row">
-      <% secrets.each do |secret| %>
-        <div class="col-md-4" id="indiv-secret">
-          <h3><%= secret["title"] %></h3>
-          <p><%= secret["comment"] %></p>
-          <p> Posted: <%= distance_of_time_in_words_to_now secret["created_at"] %> </p>
-        </div>
-        <%end%>
-      </div>
-    <%end%>
-  <%end%>
-</div>
 
 
 
