@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'pages#dashboard'
 
   get '/secrets' => 'secrets#index', as: :secrets
-  post '/secret' => 'secrets#create', as: :secret
+  post '/secrets' => 'secrets#create', as: :secret
 
    get 'login' => 'session#new', as: :login
    post 'auth' => 'session#create', as: :auth
