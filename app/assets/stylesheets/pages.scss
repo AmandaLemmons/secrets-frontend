@@ -6,8 +6,13 @@
     background-color: #C5EFF7;
     color: #6C7A89;
   h1{
-    font-size: 6em;
-  }
+    font-size: 7em;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    }
+    p {
+      font-family: 'Playfair Display', serif;
+    }
   .btn{
     background-color: #FFB3A7;
     color: white;
@@ -26,5 +31,27 @@
 body{
   background: #ECF0F1;
   color: #6C7A89;
+}
+.container {
+  p{
+    font-size: 1.25em;
+    font-family: 'Playfair Display', serif;
+  }
+  h3{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-bottom: 1px solid darken(#C5EFF7, 40%);
 
+  }
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: darken(#C5EFF7, 40%);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+  }
 }
